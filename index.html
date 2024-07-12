@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weatherContainer">
+        <h1>Weather App</h1>
+        <input type="text" placeholder="Enter your location" class="input" >
+      
+        <button class="fa-solid fa-magnifying-glass"  id="searchBtn">  Search</button>
+
+        <div class="location-not-found">
+            <h1>Sorry, Location not found!</h1>
+            <img src="images/404.png" alt="404 error">
+        </div>
+
+        <div class="weatherBody">
+            <img src= "images/mist.png" alt="Weather Image" class="weatherImg">
+
+            <div class="weatherBox">
+                <p class="temperature"> 0<sup>°C</sup></p>
+                <p class="description">Light Rain</p>
+            </div>
+
+            <div class="weatherDetails">
+                <div class="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="windSpeed">12km/Hr</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-content">
+            <ul>
+                <li>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                    <span>Mon</span>
+                    <span class="day-temp ">23°C</span>
+                </li>
+                <li>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                    <span>Tue</span>
+                    <span class="day-temp ">23°C</span>
+                </li>
+                <li>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                    <span>Weds</span>
+                    <span class="day-temp ">23°C</span>
+                </li>
+                <li>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                    <span>Thur</span>
+                    <span class="day-temp ">23°C</span>
+                </li>
+                <li>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                    <span>Fri</span>
+                    <span class="day-temp ">23°C</span>
+                </li>
+                <li>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                    <span>Sat</span>
+                    <span class="day-temp ">23°C</span>
+                </li>
+                <li>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                    <span>Sun</span>
+                    <span class="day-temp ">23°C</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/0b5adfef75.js" crossorigin="anonymous"></script>
+</body>
+</html>

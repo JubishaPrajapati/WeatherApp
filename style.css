@@ -1,0 +1,166 @@
+body{
+    background: #604CC3;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+ .weatherContainer{
+    background: #8ea2e9;
+    padding: 30px;
+    max-width: 500px;
+
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+ }
+
+ h1, label, p{
+    color: #fff;
+    margin: 8px ;
+ }
+ input{
+    width:350px;
+    height: 40px;
+    margin-top: 30px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 8px;
+    font-size: 18px;
+ }
+ button{
+    background-color: #B1AFFF;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    width: 120px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+ }
+ button:hover{
+    background: #604CC3;
+ }
+
+.weatherBody{
+    display:none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 10px;  
+}
+
+.weatherBody img{
+    width: 30%;
+}
+.weatherBox{
+    margin-block: 10px;
+    text-align: center;
+}
+.weatherBox .temperature{
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+}
+.weatherBox .temperature sup{
+    font-size: 20px;
+    position: absolute;
+    font-weight: 600;
+}
+.weatherBox .description{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.weatherDetails{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.humidity,.wind{
+    display: flex;
+    align-items: center;
+}
+.humidity{
+    margin-left: 20px;
+}
+.wind{
+    margin-right: 20px;
+}
+
+.weatherDetails i{
+    font-size: 35px;
+}
+.weatherDetails .text{
+    margin-left: 10px;
+    font-size: 17px;
+}
+
+.text span{
+    font-size: 20px;
+    font-weight: 700;
+}
+.text p{
+    font-size: 20px;
+}
+
+.location-not-found{
+    margin-top: 10px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.location-not-found h1{
+    font-size: 20px;
+    margin-block-end: 10px ;
+}
+.location-not-found img{
+    width: 50%;
+}
+
+.list-content ul{
+    background: lightgray;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.35);
+    border-radius: 10px;
+    padding: 0;
+    flex: 1;
+    
+}
+.list-content ul li{
+    font-size: 15px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 0.3s ease-in;
+}
+
+.list-content ul li:hover{
+    transform: scale(1.1);
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.35);
+    cursor: pointer;
+}
+
+.list-content ul li img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
